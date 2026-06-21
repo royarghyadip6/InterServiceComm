@@ -1,3 +1,5 @@
 spring:
   application:
     name: AccountService
+server:
+  port: 8083
