@@ -10,7 +10,8 @@ public class RestTemplateClient {
 
     private final RestTemplate restTemplate;
 
-    private final String providerUri = "http://localhost:8081/api/rest-template";
+//    private final String providerUri = "http://localhost:8081/api/rest-template";
+private final String providerUri = "http://provider/api/rest-template";
 
     public String getInstance(){
         return restTemplate.getForObject(providerUri + "/provider/provider-info", String.class);
