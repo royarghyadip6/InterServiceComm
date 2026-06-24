@@ -3,9 +3,10 @@ package com.servicecomm.customer.open_feign;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "provider-service", url = "http://localhost:8081/api/rest-template")
+//@FeignClient(name = "provider-service", url = "http://localhost:8081")
+@FeignClient(name = "provider")
 public interface OpenFeignClient {
 
-    @GetMapping("/provider/provider-info")
+    @GetMapping("/api/rest-template/provider/provider-info")
     String getInstance();
 }
